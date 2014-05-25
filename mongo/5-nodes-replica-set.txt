@@ -1,0 +1,8 @@
+rs.initiate()
+conf = rs.conf()
+conf.members[0].host="172.17.0.2:27017"
+rs.reconfig(conf)
+rs.add('172.17.0.3')
+rs.add('172.17.0.4')
+rs.add('172.17.0.5')
+rs.add('172.17.0.6')
